@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">WWWeather</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">favorite</string>
+    <string name="title_alerts">alerts</string>
+    <string name="title_settings">settings</string>
+
+    <string name="hourly">HOURLY</string>
+    <string name="daily">DAILY</string>
+    <string name="settings">Settings</string>
+    <string name="favourite">Favourite</string>
+    <string name="alerts">Alerts</string>
+    <string name="measuring_unit">Measuring Unit</string>
+    <string name="language">Language</string>
+    <string name="notifications">Notifications</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="clouds">Clouds</string>
+    <string name="units">Units</string>
+    <string name="other_settings">Other Settings</string>
+    <string name="details">Details</string>
+
+    <string name="toLabel">To</string>
+    <string name="fromLabel">From</string>
+
+    <string name="alarm">Alarm</string>
+
+    <string name="notification">notification</string>
+
+    <string name="saveAlert">SAVE</string>
+
+
+    <string name="places_api">AIzaSyCJ11f_J69usIFnVrYekzZ6sh1nZhPm6LM</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

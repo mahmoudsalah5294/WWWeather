@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context  = ".ui.home.HomeFragment"
+    android:background="@drawable/backgroud"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="17sp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginLeft="17sp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#E9E9E9"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/dayTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/segoe_ui"
+
+                    android:textColor="#707070"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Friday"
+
+                    />
+
+                <TextView
+                    android:id="@+id/statusTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="#707070"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="sunny" />
+
+                <TextView
+                    android:id="@+id/cityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="#707070"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/statusTxt"
+                    app:layout_constraintStart_toEndOf="@+id/dayTxt"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="cairo" />
+
+                <TextView
+                    android:id="@+id/monthText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="#707070"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hourText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/hourText"
+                    tools:text="may 03" />
+
+                <TextView
+                    android:id="@+id/hourText"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/cityText"
+                    app:layout_constraintStart_toStartOf="@+id/cityText"
+                    app:layout_constraintTop_toBottomOf="@+id/cityText"
+                    tools:text="12:00 PM"
+                    style="@style/card_text_style" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    app:layout_constraintEnd_toEndOf="@+id/statusTxt"
+                    app:layout_constraintStart_toStartOf="@+id/statusTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/statusTxt"
+                    tools:srcCompat="@drawable/s_sun" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tempNowTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui"
+                android:textColor="#FFFFFF"
+                android:textSize="140sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.388"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:text="50" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.25"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/mainImage"
+                android:layout_width="250sp"
+                android:layout_height="250sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                tools:srcCompat="@drawable/l_sun" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="17sp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginLeft="17sp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#E9E9E9"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="@string/hourly"
+                    style="@style/header_text_style" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hourRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    />
+
+                <View
+                    android:layout_width="300sp"
+                    android:layout_gravity="center"
+                    android:layout_height="2dp"
+                    android:background="#707070"/>
+
+                <TextView
+                    android:text="@string/daily"
+                    style="@style/header_text_style" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dayRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="17sp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginLeft="17sp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#E9E9E9"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="@string/details"
+                    style="@style/header_text_style" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="2"
+                    android:columnCount="2"
+                    android:background="@drawable/details_background"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+
+                        >
+                        <ImageView
+                            android:id="@+id/detailsImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/humidity"
+                            />
+
+                        <TextView
+                            android:id="@+id/numberTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/detailsImageView"
+                            app:layout_constraintStart_toStartOf="@+id/detailsImageView"
+                            app:layout_constraintTop_toBottomOf="@+id/detailsImageView"
+                            tools:text="90%" />
+
+                        <TextView
+                            android:id="@+id/titleTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:text="@string/humidity"
+                            android:textColor="@color/text_color"
+                            android:textSize="25sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="@+id/numberTxt"
+                            app:layout_constraintStart_toStartOf="@+id/numberTxt"
+                            app:layout_constraintTop_toBottomOf="@+id/numberTxt" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+
+                        >
+                        <ImageView
+                            android:id="@+id/detailsImageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/pressure"
+                            />
+
+                        <TextView
+                            android:id="@+id/numberTxt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/detailsImageView2"
+                            app:layout_constraintStart_toStartOf="@+id/detailsImageView2"
+                            app:layout_constraintTop_toBottomOf="@+id/detailsImageView2"
+                            tools:text="1011.3" />
+
+                        <TextView
+                            android:id="@+id/titleTxt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:text="@string/pressure"
+                            android:textColor="@color/text_color"
+                            android:textSize="25sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="@+id/numberTxt2"
+                            app:layout_constraintStart_toStartOf="@+id/numberTxt2"
+                            app:layout_constraintTop_toBottomOf="@+id/numberTxt2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+
+                        >
+                        <ImageView
+                            android:id="@+id/detailsImageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/wind" />
+
+                        <TextView
+                            android:id="@+id/numberTxt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/detailsImageView3"
+                            app:layout_constraintStart_toStartOf="@+id/detailsImageView3"
+                            app:layout_constraintTop_toBottomOf="@+id/detailsImageView3"
+                            tools:text="25.90" />
+
+                        <TextView
+                            android:id="@+id/titleTxt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:text="@string/wind_speed"
+                            android:textColor="@color/text_color"
+                            android:textSize="25sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="@+id/numberTxt3"
+                            app:layout_constraintStart_toStartOf="@+id/numberTxt3"
+                            app:layout_constraintTop_toBottomOf="@+id/numberTxt3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/detailsImageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/clouds" />
+
+                        <TextView
+                            android:id="@+id/numberTxt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/detailsImageView4"
+                            app:layout_constraintStart_toStartOf="@+id/detailsImageView4"
+                            app:layout_constraintTop_toBottomOf="@+id/detailsImageView4"
+                            tools:text="43" />
+
+                        <TextView
+                            android:id="@+id/titleTxt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui"
+                            android:text="@string/clouds"
+                            android:textColor="@color/text_color"
+                            android:textSize="25sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="@+id/numberTxt4"
+                            app:layout_constraintStart_toStartOf="@+id/numberTxt4"
+                            app:layout_constraintTop_toBottomOf="@+id/numberTxt4" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </GridLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

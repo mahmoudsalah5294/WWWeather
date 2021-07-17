@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="measuring_unit">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+
+    <string-array name="notification">
+        <item>on</item>
+        <item>off</item>
+    </string-array>
+</resources>

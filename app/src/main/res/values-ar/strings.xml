@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WWWeather</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_favorite">المفضلة</string>
+    <string name="title_alerts">التنبيهات</string>
+    <string name="title_settings">الاعدادات</string>
+
+
+    <string name="hourly">الساعات</string>
+    <string name="daily">الأيام</string>
+    <string name="settings">الاعدادات</string>
+    <string name="favourite">المفضلة</string>
+    <string name="alerts">التنبيهات</string>
+    <string name="measuring_unit">وحدة القياس</string>
+    <string name="language">اللغة</string>
+    <string name="notifications">التنبيهات</string>
+    <string name="humidity">الرطوبة</string>
+    <string name="wind_speed">سرعة الرياح</string>
+    <string name="pressure">الضغط</string>
+    <string name="clouds">السحاب</string>
+    <string name="units">الوحدات</string>
+    <string name="other_settings">الاعدادات الأخرى</string>
+    <string name="details">تفاصيل</string>
+
+    <string name="toLabel">إلى</string>
+    <string name="fromLabel">من</string>
+
+    <string name="alarm">منبه</string>
+
+    <string name="notification">اشعار</string>
+
+    <string name="saveAlert">حفظ</string>
+
+    <string name="places_api">AIzaSyCJ11f_J69usIFnVrYekzZ6sh1nZhPm6LM</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>
